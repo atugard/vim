@@ -8,6 +8,7 @@ function Plugins()
   Plug 'neovimhaskell/haskell-vim'
   Plug 'tpope/vim-surround'
   Plug 'ap/vim-buftabline'
+  Plug 'preservim/nerdtree'
 
   call plug#end()
 endfunction
@@ -50,7 +51,7 @@ function Keys()
   let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
   let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
   nnoremap <leader>b :buffers<CR>:buffer<Space>
-  nnoremap <leader>e :e 
+  nnoremap <leader>e :NERDTreeToggle <CR>
   nnoremap <leader>s :source ~/.vimrc <CR>
   nnoremap <leader>w :w! <CR>
   nnoremap <leader>q :q! <CR>
